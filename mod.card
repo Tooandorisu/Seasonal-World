@@ -1,0 +1,11 @@
+return {
+  summary = "Calendar-driven Christmas in Pallet Town, Viridian City, Pewter City, Cerulean City, Vermilion City, Lavender Town, Celadon City, Fuchsia City, Saffron City, Cinnabar Island, Indigo Plateau, Routes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 and 25, Viridian Forest, Vermilion Dock, and Safari Zone, with a manual preview.",
+  author = "Tooandorisu",
+  tags = {"cosmetic", "seasonal", "prototype"},
+  differences = {
+    changed = {},
+    added = {"Date-driven Christmas decorations and snow in Pallet Town, Viridian City, Pewter City, Cerulean City, Vermilion City, Lavender Town, Celadon City, Fuchsia City, Saffron City, Cinnabar Island, Indigo Plateau, Routes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 and 25, Viridian Forest, Vermilion Dock, and Safari Zone", "Solid tree bases and A-button Christmas greetings", "Snow/frost on live trees, Cut bushes and tall grass", "Snow on stones, native fence tops and plateau tops; snowy Cerulean bridge and Vermilion dock decks"},
+    known = {"Gen 1 flat 2D; Indigo Plateau and Saffron City need device verification; ship departure still needs in-game verification; presents are decorative; recolouring needs coloured maps"},
+  },
+  credits = {{who = "Tooandorisu", for_ = "Concept and original mod artwork/code"}},
+}
