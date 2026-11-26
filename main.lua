@@ -1,5 +1,11 @@
 local mod = ...
 local Calendar = assert(load(mod:read("calendar.lua"), "@seasonal_world/calendar.lua"))()
+local Spring = assert(load(mod:read("spring.lua"), "@seasonal_world/spring.lua"))(mod)
+local NewYear = assert(load(mod:read("new_year.lua"), "@seasonal_world/new_year.lua"))(mod)
+local LateWinter = assert(load(mod:read("late_winter.lua"), "@seasonal_world/late_winter.lua"))(mod)
+local Autumn = assert(load(mod:read("autumn.lua"), "@seasonal_world/autumn.lua"))(mod)
+local Summer = assert(load(mod:read("summer.lua"), "@seasonal_world/summer.lua"))(mod)
+local drawSpringActors = assert(load(mod:read("spring_sprites.lua"), "@seasonal_world/spring_sprites.lua"))(mod)
 local Winter = assert(load(mod:read("winter.lua"), "@seasonal_world/winter.lua"))()
 local Trees = assert(load(mod:read("trees.lua"), "@seasonal_world/trees.lua"))()
 local Viridian = assert(load(mod:read("viridian.lua"), "@seasonal_world/viridian.lua"))()
@@ -134,7 +140,9 @@ local function season()
     date = ok and value or nil
     checkedAt = now
   end
-  return Calendar.season(mod.options:get("mode"), date)
+  local mode=mod.options:get("mode")
+  if mode~="new_year" then NewYear.resetPreview() end
+  return Calendar.season(mode, date)
 end
 
 local colors = {{1, .24, .22}, {1, .85, .24}, {.25, .8, 1}, {.5, 1, .4}}
@@ -201,22 +209,64 @@ local function tree(g, x, y, tick)
   end
 end
 
+local function flatView()
+  return not Pipelines.worldPipeline() and not Tilt.active()
+end
+
 local function environmentActive(map)
-  return map and (map.id == "PALLET_TOWN" or Cities[map.id]) and season() == "christmas"
-    and not Pipelines.worldPipeline() and not Tilt.active()
+  return map and (map.id == "PALLET_TOWN" or Cities[map.id]) and season() == "christmas" and flatView()
+end
+
+local function worldVisible(ow)
+  -- Menus may show the live world behind them. The battle backdrop also
+  -- uses the world renderer, but has its own scenery.
+  return ow and ow.camera and not (Game.worldBgBattleInStack and Game.worldBgBattleInStack(Game.stack))
 end
 
 local function eligible(ow,map)
-  if not ow or not environmentActive(map or ow.map) then return false end
-  -- This prototype uses flat-world pixel coordinates. Do not draw 2D
-  -- ornaments into a 3D pipeline or a tilted/alternate world canvas.
-  if Pipelines.worldPipeline() or Tilt.active() then return false end
-  if not ow.camera then return false end
-  -- The engine already decides whether to draw the world behind a menu.
-  -- Keep its seasonal layers whenever that world pass actually runs.
-  -- Only exclude the special battle-background use of the overworld.
-  if Game.worldBgBattleInStack and Game.worldBgBattleInStack(Game.stack) then return false end
-  return true
+  return ow and environmentActive(map or ow.map) and worldVisible(ow)
+end
+
+if mod.events and mod.events.on then
+  local function seasonalWorld(mapId, wantedSeason)
+    local ow = Game.stack and Game.stack.top and Game.stack:top()
+    if ow and ow.isOverworld and ow.map and ow.map.id == mapId
+        and season() == wantedSeason and flatView() and worldVisible(ow) then return ow end
+  end
+
+  -- The engine has already handled NPCs, signs, hidden items and map scripts.
+  mod.events:on("world.interacted", function(event)
+    if event.kind ~= "none" or not Summer.maps[event.mapId] then return end
+    if event.mapId=="VERMILION_CITY" and event.x==20 and event.y==26 then
+      local ow=seasonalWorld(event.mapId,"christmas")
+      if ow and NewYear.confetti(mod.options:get("mode"),date) and NewYear.hasPaper(ow.map,event.x,event.y) then
+        Game.stack:push(TextBox.new(Game,"A little confetti\nstill glitters on\nthe pier.\nHappy New Year!"))
+        return
+      end
+    end
+    if event.mapId=="ROUTE_7" then
+      local ow=seasonalWorld(event.mapId,"autumn")
+      if ow and Autumn.hasChestnutCart(ow.map,event.x,event.y) then
+        Game.stack:push(TextBox.new(Game,"The chestnuts\ncrackle in the pan.\nThey smell sweet."))
+        return
+      end
+    end
+    local ow = seasonalWorld(event.mapId, "summer")
+    if ow then Summer.spinPicnicWheel(ow.map, event.x, event.y) end
+  end)
+
+  mod.events:on("world.stepped", function(event)
+    if not (Game.save and Game.save.onBike) then return end
+    local id = event.mapId
+    if not (Summer.kiteRoutes[id] or Autumn.cyclingRoutes[id]) then return end
+    local active = season()
+    local ride = active == "summer" and Summer.kiteRoutes[id] and Summer.ridePastKites
+        or active == "autumn" and Autumn.cyclingRoutes[id] and Autumn.ride
+    if ride then
+      local ow = seasonalWorld(id, active)
+      if ow and ow.player and not ow.player.surfing then ride(ow.map, event.x, event.y) end
+    end
+  end)
 end
 
 local function drawDecorations(ow)
@@ -351,12 +401,51 @@ if dockShipPass then
   end
 end
 local function warn(...) mod.log:warn(...) end
--- Connected maps are drawn in their own camera coordinates. Apply snow to
--- each visible map body so snow reaches both sides of the route seams.
-local function drawPreview(renderer,camX,camY)
+local function mapPlayer(map, includeNeighbor)
+  if map == activeWorld.map then return activeWorld.player end
+  if includeNeighbor and activeWorld.neighbors then
+    for _, neighbor in ipairs(activeWorld.neighbors) do
+      if neighbor.map == map then return activeWorld.player, neighbor end
+    end
+  end
+end
+
+-- Current and connected map bodies arrive with their own camera offsets.
+local function drawMapLayer(renderer,camX,camY)
   local map=renderer.map
-  if not activeWorld or not map or map==activeWorld.map
-      or mod.options:get("cover")==false then return end
+  if not activeWorld or not map then return end
+  local current = season()
+  if current == "late_winter" then
+    if LateWinter.maps[map.id] and mod.options:get("cover")~=false
+        and flatView() and worldVisible(activeWorld) then
+      local w,h=Renderer:worldViewSize()
+      LateWinter.draw(love.graphics,map,camX,camY,w,h,Calendar.snowStage(mod.options:get("mode"),date))
+    end
+    return
+  end
+  if current == "autumn" then
+    if Autumn.maps[map.id] and flatView() and worldVisible(activeWorld) then
+      local w,h=Renderer:worldViewSize()
+      Autumn.draw(love.graphics,map,camX,camY,w,h,mapPlayer(map,true))
+    end
+    return
+  end
+  if current == "summer" then
+    if Summer.maps[map.id] and flatView() and worldVisible(activeWorld) then
+      local w,h=Renderer:worldViewSize()
+      Summer.draw(love.graphics,map,camX,camY,w,h,not not activeWorld.fishing,date,
+        mapPlayer(map, Summer.fireflySites[map.id]))
+    end
+    return
+  end
+  if current == "spring" then
+    if Spring.maps[map.id] and flatView() and worldVisible(activeWorld) then
+      local w,h=Renderer:worldViewSize()
+      Spring.draw(love.graphics,map,camX,camY,w,h,mapPlayer(map, Spring.connectedPetalMaps[map.id]))
+    end
+    return
+  end
+  if map==activeWorld.map or mod.options:get("cover")==false then return end
   local root=activeWorld.map
   if map.id=="VERMILION_DOCK" then
     if not eligible(activeWorld,map) then return end
@@ -393,14 +482,14 @@ local previousMapOnly=TileRenderer.drawMapOnly
 if type(previousMapOnly)=="function" then
   TileRenderer.drawMapOnly=function(self,camX,camY,...)
     previousMapOnly(self,camX,camY,...)
-    drawPreview(self,camX,camY)
+    drawMapLayer(self,camX,camY)
   end
 end
 local previousTiles = TileRenderer.draw
 if type(previousTiles) == "function" then
   TileRenderer.draw = function(self, camX, camY, ...)
     previousTiles(self, camX, camY, ...)
-    drawPreview(self,camX,camY)
+    drawMapLayer(self,camX,camY)
     if activeWorld and self.map == activeWorld.map and eligible(activeWorld)
         and mod.options:get("cover") ~= false then
       local city=Cities[self.map.id]
@@ -433,6 +522,11 @@ if type(previousTiles) == "function" then
       Surfaces.draw(love.graphics,self.map,camX,camY,w,h,
         function(...) mod.log:warn(...) end, Cities[self.map.id] and Cities[self.map.id].protect)
     end
+    if activeWorld and self.map==activeWorld.map and self.map.id=="VERMILION_CITY"
+        and eligible(activeWorld) then
+      local w,h=Renderer:worldViewSize()
+      NewYear.draw(love.graphics,self.map,camX,camY,w,h,mod.options:get("mode"),date,checkedAt)
+    end
   end
 else
   mod.log:warn("Snow cover is unavailable on this engine build. Other decorations remain enabled.")
@@ -440,6 +534,7 @@ end
 local previousDraw = Overworld.drawWorld
 if type(previousDraw) == "function" then
   Overworld.drawWorld = function(self, ...)
+    if self.map.id~="VERMILION_CITY" then NewYear.resetPreview() end
     local previousWorld = activeWorld
     activeWorld = self
     local locations = Trees.forMap(self.map)
@@ -503,7 +598,12 @@ if type(previousDraw) == "function" then
       end
       for _, entity in ipairs(self.entities or {}) do sortWithTrees(entity, 0) end
     end
-    local ok, err = pcall(previousDraw, self, ...)
+    local draw = pcall
+    if (self.map.id == "ROUTE_12" or self.map.id == "LAVENDER_TOWN")
+        and season() == "spring" and flatView() and worldVisible(self) then
+      draw = drawSpringActors
+    end
+    local ok, err = draw(previousDraw, self, ...)
     -- Always restore inherited/instance methods, including engine failures.
     for _, patch in ipairs(patched) do patch.entity.draw = patch.own end
     activeWorld = previousWorld
@@ -516,4 +616,4 @@ else
 end
 
 mod.exports.currentSeason = season
-mod.log:info("Seasonal World 1.0.0-rc.1 loaded. Kanto towns, all 25 numbered routes, Indigo Plateau, Viridian Forest, Vermilion Dock, and Safari Zone. Set SEASON to CHRISTMAS TEST for a preview.")
+mod.log:info("Seasonal World 1.4.0-alpha.14 loaded. Late winter is active from January 7 through the end of February.")

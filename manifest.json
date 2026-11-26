@@ -1,8 +1,8 @@
 {
   "id": "seasonal_world",
-  "name": "Seasonal World - Christmas Test",
+  "name": "Seasonal World - Late Winter Preview",
   "author": "Tooandorisu",
-  "version": "1.0.0-rc.1",
+  "version": "1.4.0-alpha.14",
   "api": 2,
   "entry": "main.lua",
   "options_schema": "options.lua",
@@ -16,5 +16,5 @@
     "engine_internals"
   ],
   "dependencies": [],
-  "description": "Calendar-driven Christmas snow and decorations in Kanto towns, Indigo Plateau, Routes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 and 25, Viridian Forest, Vermilion Dock, and Safari Zone. Manual preview available. Flat Gen 1 2D prototype."
+  "description": "Late winter now spans all 42 outdoor maps, including Indigo Plateau and Vermilion Dock. Compare LATE WINTER TEST and THAW TEST or follow the local calendar."
 }

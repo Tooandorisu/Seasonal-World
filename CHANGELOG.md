@@ -1,5 +1,329 @@
 # Changelog
 
+## [1.4.0-alpha.14] - 2026-11-26
+
+- Late winter now covers all 42 outdoor maps. Follow the sheltered snow along Route 22 and the stone walls on Route 23 to Indigo Plateau. Stand just outside the Pokémon League doors. In January, the ground to either side is snowy; in late February, small patches cling to the foot of the wall. At Vermilion Dock, frost recedes to the fixed quay edge beside the gangway. Choose LATE WINTER TEST or THAW TEST with SNOW COVER enabled.
+
+## [1.4.0-alpha.13] - 2026-11-26
+
+- Late winter reaches the southern coast on Routes 19, 20 and 21 and around Cinnabar Island. January snow follows the waterline at the Route 19 beach, the Seafoam Islands and Cinnabar. Gaps open on February 1, and by February 20 only short strips remain. Stand one tile north of the Route 19 beach sign and compare LATE WINTER TEST with THAW TEST. The snow follows the beach in both Red/Blue and Yellow.
+
+## [1.4.0-alpha.12] - 2026-11-26
+
+- Follow the late-winter trail east from Fuchsia City along Routes 15, 14 and 13. January snow lines the ground below fences and ledges. In early February the paths clear while some frost remains in tall grass. From February 20 only short sheltered strips remain. Stand one tile south of the Route 13 sign in the fence maze and compare the ground below the fence on either side of the sign in LATE WINTER TEST and THAW TEST.
+
+## [1.4.0-alpha.11] - 2026-11-26
+
+- Late winter reaches Fuchsia City and all four outdoor Safari Zone areas. In Fuchsia, snow lingers at the corners of the Warden's house. Inside the Safari Zone, January snow traces the roof ridges of the four rest houses and the Secret House. On February 1 the middle clears, and from February 20 only snow on the two end caps remains. Stand outside the rest house in the Center Area to compare LATE WINTER TEST and THAW TEST with SNOW COVER enabled.
+
+## [1.4.0-alpha.10] - 2026-11-26
+
+- Late winter follows Cycling Road along Routes 16, 17 and 18. In January, snow traces the banks beside the road. From February 1 the white lines develop gaps, and from February 20 only short strips remain. Stop beside the Cycling Road Ends sign near the south end of Route 17. With SNOW COVER enabled, compare the two banks in LATE WINTER TEST and THAW TEST.
+
+## [1.4.0-alpha.9] - 2026-11-26
+
+- Snow along the fronts of the Underground Path buildings on Routes 7 and 8 retreats to the corners in February. In Celadon City, find the pond west of the Game Corner. Its northern bank carries a continuous white rim in January. The centre clears on February 1 and only the two tips remain from February 20. Compare LATE WINTER TEST and THAW TEST from the road directly below the middle of the pond.
+
+## [1.4.0-alpha.8] - 2026-11-26
+
+- The late-winter walk from Vermilion to Cerulean now passes through Route 6, Saffron City and Route 5. Long strips of January snow break up along the building fronts in early February. By February 20, small patches remain at the corners, with the doorways clear. In THAW TEST, stand outside the Day Care on Route 5 and look two tiles to the left and one to the right. Compare with LATE WINTER TEST at the same spot.
+
+## [1.4.0-alpha.7] - 2026-11-26
+
+- Along Route 12 and the Vermilion City pier, frost clings to the planks beside open water. The streaks shorten on February 1 and again on February 20. On Route 12, stand one tile south of the Sport Fishing sign and look at the eastern edge of the pier. On Route 11, snow lingers below the cliffs on either side of Diglett's Cave.
+
+## [1.4.0-alpha.6] - 2026-11-26
+
+- Snow settles against the cliffs on Routes 9 and 10. At the southern Rock Tunnel exit, look one tile to either side of the path below the cave mouth. In Lavender Town, two strips of snow beneath Pokémon Tower shrink on February 1 and again on February 20. Stand just outside the tower entrance to compare LATE WINTER TEST with THAW TEST.
+
+## [1.4.0-alpha.5] - 2026-11-26
+
+- Late winter reaches Cerulean City and Routes 24 and 25. Frost retreats along the outer planks of Nugget Bridge in February. A small strip of snow lingers below the garden fence west of Bill's house. In THAW TEST, stand outside Bill's door and look five tiles west.
+
+## [1.4.0-alpha.4] - 2026-11-26
+
+- Late winter reaches Pewter City and Routes 3 and 4. The small icicles on Pewter Museum’s front eave shorten on February 1 and again on February 20. Snow melts first on open paths; drifts linger against the foothill rock faces. Stand just outside the western Mt. Moon entrance on Route 4 and look one tile west along the foot of the cliff. Compare LATE WINTER TEST with THAW TEST, with SNOW COVER enabled.
+
+## [1.4.0-alpha.3] - 2026-11-26
+
+- Late winter now reaches Viridian City, Route 2 and Viridian Forest. The city paths thaw first, leaving frost beside fences. Grass shows through at the edges of Route 2 from February 1. From February 20 a single patch of snow remains under a tree in Viridian Forest. From the southern Trainer Tips sign, look two tiles north and one tile west. Choose THAW TEST to see it on any date.
+
+## [1.4.0-alpha.2] - 2026-11-25
+
+- On the city pier in Vermilion City, watch gold, rose and blue fireworks over the water with reflections. In AUTO (DATE), the display runs from 23:30 on December 31 until 00:30 on January 1, using the device’s local clock. Three bursts mark midnight. Confetti stays until the end of January 1. From the sailor at the boarding end, walk three tiles north and one east, then face north and press A. NEW YEAR TEST plays the finale when the harbour comes into view, repeats it every 18 seconds and enables the confetti greeting. Christmas lights stay on.
+
+## [1.4.0-alpha.1] - 2026-11-25
+
+- Late winter begins on January 7 in Pallet Town and on Route 1. Snow lingers on Oak's Lab and frost settles on the grass. More grass shows on February 1 and again on February 20, through the last day of the month. In autumn, face the chestnut cart two tiles east of the tile outside the Route 7 Underground Path entrance and press A.
+
+## [1.3.0-alpha.12] - 2026-11-25
+
+- Ten harvest wreaths decorate Route 11, Vermilion Dock, Routes 22 and 23, and Indigo Plateau. Each has autumn leaves and berries woven around a wooden hoop. At the dock, look for the sea-green ribbons. At Indigo Plateau, the violet ribbons flutter two tiles west of the tile just outside the left League door. AUTUMN MOTION off holds the ribbons still. All 42 outdoor maps now have autumn scenery.
+
+## [1.3.0-alpha.11] - 2026-11-25
+
+- Ten tiny seashell boats bob on Routes 19, 20 and 21 and off Cinnabar Island. Each carries a twig mast and a red, gold or russet leaf sail. Look south from the Route 19 beach sign to see the red sail from shore: three tiles south in Red/Blue, one in Yellow. AUTUMN MOTION off holds the boats still.
+
+## [1.3.0-alpha.10] - 2026-11-25
+
+- Ten chestnut carts line the four approaches to Saffron City (Routes 5, 6, 7 and 8) and the city itself. Two wisps rise from each roasting pan beside a folded paper cone. On Route 7, walk two tiles east from the tile just outside the Underground Path entrance. Turn off AUTUMN MOTION to hold the steam still.
+
+## [1.3.0-alpha.9] - 2026-11-25
+
+- Bicycle wheels stir ten drifts of red, gold and copper leaves on Routes 16, 17 and 18 and in Celadon City. Ride within three tiles to send the leaves spiralling up and back down. On Route 18 look one tile north of the route sign on the Fuchsia side of the gate. The drifts stay still on foot and with AUTUMN MOTION off.
+
+## [1.3.0-alpha.8] - 2026-11-25
+
+- Paras peeks out of ten leaf piles in Fuchsia City and the four outdoor Safari Zone areas. Walk closer to reveal its spotted mushrooms and orange claws. Step back and it burrows into the leaves. The first pile is three tiles directly south of the Safari Zone gate door in Fuchsia City. AUTUMN MOTION off keeps its claw still at each distance.
+
+## [1.3.0-alpha.7] - 2026-11-25
+
+- Eight woven baskets stand beneath low apple branches on Routes 13, 14 and 15. Watch a red, golden or green apple fall, bounce once and settle in the basket. On Route 15 the first basket is one tile east and one tile south of the lower east door of the gate to Fuchsia City. AUTUMN MOTION off keeps the apple on its branch.
+
+## [1.3.0-alpha.6] - 2026-11-25
+
+- Red and golden maple leaves circle on the water at four fishing platforms on Route 12 and at two spots in Vermilion City. Look east from the Sport Fishing sign on Route 12 or across the inlet by the Old Rod house. Turn off AUTUMN MOTION to hold the leaves still.
+
+## [1.3.0-alpha.5] - 2026-11-25
+
+- Eight autumn flower beds on Routes 9 and 10 and in Lavender Town shelter Gastly. From a distance, you see a faint violet mist. Approach the flowers to reveal Gastly hovering above them, then step away to watch it fade. From the tile just outside Pokémon Tower, walk two tiles east to the purple flowers. Turning off AUTUMN MOTION keeps Gastly still at each distance.
+
+## [1.3.0-alpha.4] - 2026-11-25
+
+- Six Pidgey forage beside berry bushes on Routes 24 and 25. Each bird hops toward a low branch, pecks a berry and hops back. From the tile just outside Bill’s house, walk five tiles east to see one up close. AUTUMN MOTION off keeps the birds resting beside the bushes.
+
+## [1.3.0-alpha.3] - 2026-11-25
+
+- Eight carved pumpkin lanterns line Route 3, Route 4 and Cerulean City. Look for a smiling face, a crescent moon and a star. The candlelight flickers gently inside the carvings. From the tile just outside the Cerulean Pokémon Center, walk three tiles east to the smiling pumpkin. AUTUMN MOTION off keeps the light steady.
+
+## [1.3.0-alpha.2] - 2026-11-25
+
+- Seven mushroom clusters grow on Route 2, in Viridian Forest and in Pewter City. An acorn drops, bounces on the moss and rolls behind the caps. Look for red caps two tiles north of the Trainer Tips sign near the southern forest gate. In Pewter City, walk two tiles south from the tile just outside the Pokémon Center to see the golden cluster. AUTUMN MOTION holds the scene still when switched off.
+
+## [1.3.0-alpha.1] - 2026-11-25
+
+- Seven leaf piles line the walk from Pallet Town through Route 1 to Viridian City. On Route 1, look two tiles west of the route sign. In Viridian City, walk two tiles south from the tile outside the Pokémon Center. A gust lifts a red, gold or copper leaf, turns it in the air and drops it back onto the pile.
+- Added AUTUMN TEST and AUTUMN MOTION. AUTO (DATE) selects autumn from September through November.
+
+## [1.2.0-alpha.10] - 2026-11-25
+
+### Added
+
+- Five lemonade tables with striped parasols appear on Route 5, on Route 11 and at Vermilion Dock. Step outside Day Care and look two tiles east of the door. On Route 11, look just southwest of the Diglett’s Cave entrance. The blue parasol at the dock stands east of the gangway on the fixed pier. SUMMER MOTION lets the parasols sway in the breeze.
+- Summer scenery now covers all 42 outdoor areas tracked by the mod.
+
+## [1.2.0-alpha.9] - 2026-11-25
+
+### Added
+
+- Three fireflies hover above each of ten fern patches on Routes 1, 22 and 23 and at Indigo Plateau. They rise higher as the player approaches. Summer scenery now covers 39 of the 42 Kanto outdoor areas in this mod.
+- In AUTO (DATE), the fireflies begin to glow at dusk and settle back onto the leaves at dawn, using the device’s local time. SUMMER TEST shows evening behavior at any hour. Turning off SUMMER MOTION keeps them perched with a steady glow.
+
+## [1.2.0-alpha.8] - 2026-11-25
+
+### Added
+
+- Twelve tethered summer kites in Celadon City and on Routes 7, 16, 17 and 18. Their paper tails move in the breeze. Cycling close to a reel raises the kite, pulls its line taut and then lets it drift back down. SUMMER MOTION can hold the kites still.
+- Look for the red diamond south of Celadon’s Pokémon Center, a blue swallow at the western doors of the Route 16 gate and a golden-orange carp above the eastern lane of Route 17. Summer now covers 35 of Kanto’s 42 outdoor areas in this mod.
+
+## [1.2.0-alpha.7] - 2026-11-25
+
+### Added
+- Twelve picnic blankets on Routes 2, 3 and 4 and in Viridian Forest, Pewter City and Viridian City bring summer scenery to 30 of Kanto’s 42 outdoor areas. Blue blankets have lemonade, red blankets have watermelon and green blankets have berries.
+- A paper pinwheel catches the breeze on the right side of each blanket. Face its tile and press **A** for three extra turns that slow to a stop. **SUMMER MOTION** also controls these wheels.
+
+## [1.2.0-alpha.6] - 2026-11-24
+
+### Added
+- Blue and amber butterflies visit twelve patches of summer daisies between Lavender Town, Rock Tunnel, Cerulean City, Nugget Bridge and Bill’s house. Summer now covers 24 of Kanto’s 42 outdoor areas.
+- Two flowers take turns supporting each butterfly. A flower dips when the butterfly settles and lifts as it takes off. The butterfly briefly spreads its wings while resting, then follows a higher arc out and a lower arc back. With **SUMMER MOTION** off, it rests on the left flower.
+
+## [1.2.0-alpha.5] - 2026-11-24
+
+### Added
+- Eight strings of summer pennants decorate the gate and Underground Path buildings on Routes 6 and 8, the Pokémon Center and Poké Mart in Saffron City, and the Pokémon Center and Mr. Fuji’s house in Lavender Town.
+- A gust lifts the flags from left to right. Lavender has lilac pennants, Saffron has golden ones, and teal pennants mark the Route 6 Underground Path and Saffron Poké Mart. **SUMMER MOTION** off leaves the flags hanging still.
+
+## [1.2.0-alpha.4] - 2026-11-24
+
+### Added
+- Four red-and-white floats bob beside the Route 12 boardwalk. Look east as you enter from Route 13, south from the Super Rod house door, east of the Sport Fishing sign, or between the northern fishing platforms.
+- Two floats mark fishing spots in Vermilion City, one beside the Old Rod house and one just east of the S.S. Anne boarding pier. Sunlight glints on open water in Vermilion City and on Route 12.
+- Each float tugs, goes under, and leaves two rings before it resurfaces. Turning off **SUMMER MOTION** keeps the floats upright. Casting your own rod hides the scenery floats until the cast ends.
+
+## [1.2.0-alpha.3] - 2026-11-24
+
+### Added
+- Golden seed heads grow at the edges of the tall grass on Routes 15, 14 and 13. The first patch is just east of the Fuchsia gate on Route 15. Each gust bends neighbouring tufts in sequence. **SUMMER MOTION** off keeps the seed heads upright.
+- The seed heads follow the live grass tiles. When a patch is cleared with Cut, its seed heads disappear too.
+- Sunlight glints on open water along Routes 14 and 13.
+
+## [1.2.0-alpha.2] - 2026-11-24
+
+### Added
+- A turquoise dragonfly rests on a cattail at the fishing pond behind the Good Rod house in Fuchsia City. It flies low over the water and returns to the same stem.
+- Each of the four outdoor Safari Zone areas has a dragonfly by a pond. In the Center Area, look at the southeast bank near the rest house. Sunlight now glints on open water in Fuchsia City and these four areas.
+- Turning off **SUMMER MOTION** keeps the dragonflies perched.
+
+## [1.2.0-alpha.1] - 2026-11-24
+
+### Added
+- Summer follows the local calendar from June 1 through August 31. Choose **SEASON → SUMMER TEST** to preview it year-round.
+- Five sunflowers grow in Pallet Town, including two by Oak’s Lab. Their heads turn slightly as a breeze passes.
+- Sunlight glints on open water in Pallet Town, on Routes 21, 20 and 19 and around Cinnabar Island. A turquoise towel and orange sandals lie beside the Route 19 beach sign, including its position in Yellow.
+- **SUMMER MOTION** controls the sunflower breeze and the glints.
+
+## [1.1.0-alpha.27] - 2026-11-24
+
+### Added
+- Flowers now shed petals on Routes 13–15 and 19–23, on Cinnabar Island and at Indigo Plateau. The spring walk has a place to see drifting petals on every numbered Kanto route. On Cinnabar Island, stand directly in front of the Pokémon Mansion or the Pokémon Lab to see pink primrose petals.
+- Three pairs of flowers mark the approach to the Pokémon League. Each pair releases two petals toward the middle aisle, left then right, as the breeze moves up the terraces. The pair beside the League doors is gold. Use **SPRING TEST** and **FALLING PETALS** to see them on any date.
+
+## [1.1.0-alpha.26] - 2026-11-24
+
+### Added
+- In all four outdoor areas of the Safari Zone, a petal from each bankside buttercup arcs out over the pond. It lands on open water with a small ripple, floats a short way and fades. In the Center Area, follow the right side of the rest house to the southeast corner of the pond.
+- Pink primroses shed petals by the park entrance, the four rest houses and the Secret House. The existing **FALLING PETALS** setting controls both effects.
+
+## [1.1.0-alpha.25] - 2026-11-23
+
+### Added
+- A breeze runs downhill through the flower beds on Route 17. Successive rows of pink and yellow flowers shed petals that lift briefly and drift about one tile south. Follow the eastern bike lane, or hold B with the direction button released to watch the breeze pass.
+- Spring petals now appear on Routes 16 and 18 and in Fuchsia City. Try the house where you get Fly, the east exit of the Route 18 gate, or one step to either side of the tile in front of the Safari Zone gate. The existing **FALLING PETALS** setting covers these areas.
+
+## [1.1.0-alpha.24] - 2026-11-23
+
+### Added
+- Ground flowers now release petals on Routes 8 and 7 and in Saffron and Celadon. Look for golden buttercups in front of the Fighting Dojo or both petal colors outside the Underground Path entrances.
+- Stand outside the Game Corner in Celadon City and look left. A petal from the pink primrose drifts onto the pond, makes a small ripple and floats on the surface before fading. The existing **FALLING PETALS** setting controls the whole effect.
+
+## [1.1.0-alpha.23] - 2026-11-23
+
+### Added
+- The primroses in Lavender Town now release lilac petals with the same tint as the flowers. Their slower drift is visible from the tile in front of Pokémon Tower and outside Mr. Fuji's house.
+- Spring petals now appear on Routes 9, 10 and 12. Look near both entrances to Rock Tunnel, outside the Power Plant and beside the Super Rod house. Ground petals near map edges now finish their arc within the map. The existing **FALLING PETALS** setting controls the effect.
+
+## [1.1.0-alpha.22] - 2026-11-23
+
+### Added
+- Pink primroses and yellow buttercups now release matching petals on Routes 5, 6 and 11 and in Vermilion City. Try the Day Care on Route 5 or step left from the tile in front of Diglett's Cave on Route 11.
+- The flower boxes beside the S.S. Anne gangway now take turns releasing petals. Watch from the boarding path for pink on the left and yellow on the right. The existing **FALLING PETALS** setting controls the effect.
+
+## [1.1.0-alpha.21] - 2026-11-23
+### Added
+- Pink primroses and yellow buttercups now release matching petals on Routes 3, 4, 24 and 25 and in Cerulean City. Walk close to the flowers to see the breeze lift a petal and set it down beside the plant. Flowering tree crowns in these areas shed pink petals as well.
+- To see both colors, stand two tiles south of the Cerulean Pokémon Center door or walk four tiles left from the tile in front of Bill's door. The existing **FALLING PETALS** setting controls the effect.
+
+## [1.1.0-alpha.20] - 2026-11-23
+### Added
+- A breeze lifts pink petals from the primrose beds by the Pallet Town sign and south of Oak’s Lab. The petals rise in a short arc and settle beside the flowers.
+- Flowering trees now shed petals on Route 1, on Route 2 and in Pewter City. Look by the north gate of Viridian Forest or two tiles south of the Pewter Gym door. The existing **FALLING PETALS** setting controls both effects.
+
+## [1.1.0-alpha.19] - 2026-11-23
+### Added
+- Flowering trees in Viridian City and Celadon City now shed pink petals in spring. Look east of Viridian Gym or just east of the Pokémon Center in Celadon. Trees in the same row take turns.
+- The existing **FALLING PETALS** switch covers both cities and Viridian Forest. The city branches follow the same animation as you cross a connected route boundary.
+
+## [1.1.0-alpha.18] - 2026-11-23
+### Added
+- Pink petals occasionally flutter down from flowering branches when you walk past or stand nearby in Viridian Forest. Try the trees just inside the south entrance.
+- The new **FALLING PETALS** setting is on by default and works in both calendar spring and **SPRING TEST**. Turn it off for stationary blossoms.
+
+## [1.1.0-alpha.17] - 2026-11-23
+### Added
+- With **SEASON → AUTO (DATE)**, spring flowers appear throughout the supported areas on March 1 and last through May 31 each year. The season follows the device's local date during play. **SPRING TEST** shows the same flowers on any date.
+
+## [1.1.0-alpha.16] - 2026-11-23
+### Added
+- Two wooden flower boxes stand on the quay beside the S.S. Anne gangway at Vermilion Dock. Pink primroses grow on the west side and yellow buttercups on the east.
+
+## [1.1.0-alpha.15] - 2026-11-23
+### Added
+- Yellow buttercups grow on the banks of ponds in the Center, East, North and West areas of the Safari Zone.
+- Pink primroses mark the park entrance, the four rest houses and the Secret House. A few wildflowers grow at the edges of the tall grass.
+
+## [1.1.0-alpha.14] - 2026-11-23
+### Added
+- Wildflowers beside the tall grass and the Pokémon League sign on Route 22.
+- Pink primroses and yellow buttercups on Route 23, including the banks along the Surf section and the ground outside both openings to Victory Road.
+- Three pairs of flowers flank the statue-lined approach at Indigo Plateau. The spring preview now covers all 25 numbered routes in Kanto.
+
+## [1.1.0-alpha.13] - 2026-11-22
+### Added
+- Spring wildflowers on Route 19's beach, including the longer beach around the Summer Beach House in Yellow.
+- Pink primroses and yellow buttercups outside the two Seafoam Islands cave entrances on Route 20.
+- Pink flowers around the Pokémon Mansion, Pokémon Lab and waterfront on Cinnabar Island. Route 21 now has wildflowers in the beds and tall grass near Pallet Town.
+
+## [1.1.0-alpha.12] - 2026-11-22
+### Added
+- Spring flowers between the ledges on Route 9 and beside the tall grass east of Cerulean City.
+- Primroses and buttercups outside both Rock Tunnel entrances and near the Pokémon Center on Route 10. Yellow buttercups also grow along the riverbank and in front of the Power Plant.
+
+## [1.1.0-alpha.11] - 2026-11-22
+### Added
+- Spring wildflowers outside the Route 15 gate and in the flower beds and tall grass east of Fuchsia City.
+- Pink primroses and yellow buttercups beside Route 14's tree-lined grass patch, through the Route 13 fence maze and on the bank by the wooden walkway to Route 12.
+
+## [1.1.0-alpha.10] - 2026-11-22
+### Added
+- Wildflowers by the Fly house and the Cycling Road gate on Route 16.
+- Pink and yellow blooms in the flower beds beside the bike lanes on Route 17 and around the gate and tall grass on Route 18.
+- Pink primroses at the Safari Zone entrance in Fuchsia City and around the Warden's house, the Good Rod house and their pond.
+
+## [1.1.0-alpha.9] - 2026-11-22
+### Added
+- Spring wildflowers around the fenced grass patch on Route 8 and near the Underground Path entrances on Routes 8 and 7.
+- Yellow buttercups by the Fighting Dojo and Saffron Gym, and along the west wall of Silph Co.
+- Pink primroses south of Celadon Gym and beside the central pond, with small clusters of flowers outside the Game Corner and Prize Room.
+
+## [1.1.0-alpha.8] - 2026-11-22
+### Fixed
+- On Route 12 and in Lavender Town, Spring Test can now rebuild a released character image or animation frame and draw the character again. This addresses a crash reported while walking north from Route 12.
+
+## [1.1.0-alpha.7] - 2026-11-20
+### Added
+- Pink and yellow wildflowers near Diglett's Cave and the eastern gate on Route 11.
+- Spring flowers on the banks of Route 12, including the junction with Route 11 and the ground around the Super Rod house.
+- Small purple flowers at the entrances to Lavender Town, near Mr. Fuji's house and on the approach to Pokémon Tower.
+
+## [1.1.0-alpha.6] - 2026-11-20
+### Added
+- Spring flowers around the Day Care and the Underground Path entrance on Route 5.
+- Pink primroses and yellow buttercups near the Route 6 tunnel exit and along the south bank of the pond.
+- Flowers beside the Pokémon Fan Club and on the waterfront lawn south of Vermilion Gym.
+
+## [1.1.0-alpha.5] - 2026-11-19
+### Added
+- Wildflowers along the riverbank beside Nugget Bridge and in the grass and flower beds on Route 24.
+- Spring flower beds and tree blossoms along Route 25, with pink primroses and yellow buttercups beside the pond east of Bill's house.
+
+## [1.1.0-alpha.4] - 2026-11-18
+### Added
+- Small patches of wildflowers on the rocky approaches to Mt. Moon on Route 4, with more flowers in the beds and tall grass to the east.
+- Blossoms on trees and in garden beds in Cerulean City. A few wildflowers also grow on the grassy bank east of Nugget Bridge.
+
+## [1.1.0-alpha.3] - 2026-11-18
+### Added
+- Spring flowers in Pewter City's garden beds and on some of its trees.
+- Pink and yellow wildflowers beside Route 3's western entrance, in its flower beds and along the edges of tall grass.
+
+### Changed
+- Moved the blossom clusters on the two middle trees in the row of four beside the south entrance to Viridian Forest. They now grow on the left branches at different heights.
+
+## [1.1.0-alpha.2] - 2026-11-18
+### Added
+- Extended the spring walk onto Route 2 with flowering trees and wildflowers along tall grass.
+- Added pink blossom clusters to some of the large trees in Viridian Forest and scattered wildflowers around its grass patches.
+
+## [1.1.0-alpha.1] - 2026-11-18
+### Added
+- Choose **SEASON → SPRING TEST** for spring flower beds in Pallet Town, on Route 1 and in Viridian City.
+- Wildflowers grow along patches of tall grass, and pink blossoms appear on some of Viridian City's trees. Both sides of a visible map boundary show their spring scenery as you approach.
+
+## [1.0.0-rc.2] - 2026-11-14
+### Fixed
+- Snow reaches the roof trim on the Warden's house and the Good Rod house in Fuchsia City.
+
 ## [1.0.0-rc.1] - 2026-11-14
 ### Release candidate
 - Packages the Christmas build from 0.0.100 and adds a short mobile test guide for map seams, Safari Zone, and seasonal settings.

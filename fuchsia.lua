@@ -8,8 +8,8 @@ City.buildings={
   {160,416,64,32,14}, -- Bill's grandpa's house
   {224,416,64,32,14}, -- decorative house
   {288,384,64,64,30}, -- Pokemon Center
-  {416,400,64,48,14}, -- Warden's house; upper 16px are backyard ground
-  {480,400,64,48,14}, -- Good Rod house with a north-side entrance
+  {416,400,64,48,14,true}, -- Warden's house
+  {480,400,64,48,14,true}, -- Good Rod house with a north-side entrance
 }
 for _,b in ipairs(City.buildings) do
   City.protect[#City.protect+1]={b[1],b[2],b[3],b[4]}
@@ -17,8 +17,13 @@ for _,b in ipairs(City.buildings) do
   local y=b[2]+b[5]
   City.lights[#City.lights+1]={b[1],y,b[3]}
   City.details[#City.details+1]={b[1],y,b[3],4}
-  City.details[#City.details+1]={b[1],y+4,14,6}
-  City.details[#City.details+1]={b[1]+b[3]-14,y+4,14,6}
+  local sideWidth=b[6] and 16 or 14
+  City.details[#City.details+1]={b[1],y+4,sideWidth,6}
+  City.details[#City.details+1]={b[1]+b[3]-sideWidth,y+4,sideWidth,6}
+  if b[6] then
+    -- The band between the upper and lower windows uses the roof palette.
+    City.details[#City.details+1]={b[1]+3,b[2]+24,58,8}
+  end
 end
 for _,r in ipairs(City.details) do City.roofs[#City.roofs+1]=r end
 City.warmRoofs=true
